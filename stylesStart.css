@@ -1,0 +1,47 @@
+/* === START AREA (Pantalla donde aparece Flowey) === */
+
+.start-area {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  padding-bottom: 40px;
+}
+
+.flowey-container {
+  margin-bottom: 200px;
+}
+
+.flowey {
+  width: 140px;              /* ajusta según tu sprite */
+  image-rendering: pixelated;
+  animation: float 2s infinite ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+.dialogue-box {
+  width: 760px;
+  min-height: 130px;
+  border: 3px solid white;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+}
+
+#dialogueText {
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
